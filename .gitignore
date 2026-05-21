@@ -1,0 +1,13 @@
+# Operating system
+Thumbs.db
+.DS_Store
+
+# Build and export outputs
+build/
+dist/
+out/
+coverage/
+
+# Toolchain artifacts
+*.log
+*.tmp

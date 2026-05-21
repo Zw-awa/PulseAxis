@@ -1,0 +1,30 @@
+name: Feature request / 功能建议
+description: Propose a scoped improvement / 提出一个范围明确的改进建议
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for scoped improvements that fit the current project direction.
+        请使用这个模板提交符合当前项目方向的改进建议。
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / 动机
+      description: What problem would this solve? / 这个建议要解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / 建议内容
+      description: What change are you proposing? / 你想提出什么改动？
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and risks / 范围与风险
+      description: Call out assumptions, scope boundaries, or safety concerns. / 请说明假设、范围边界或安全顾虑。

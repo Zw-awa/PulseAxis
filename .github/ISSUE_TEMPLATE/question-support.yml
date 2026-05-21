@@ -1,0 +1,23 @@
+name: Question or support / 提问或支持
+description: Ask for clarification about repository usage or current public scope / 询问仓库使用方式或当前公开范围
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when you need clarification rather than reporting a defect.
+        当你需要澄清信息，而不是报告缺陷时，请使用这个模板。
+  - type: textarea
+    id: question
+    attributes:
+      label: Question / 问题
+      description: What do you need clarified? / 你想确认什么？
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / 背景
+      description: What did you read already, and where are you blocked? / 你已经看过什么内容，卡在哪一步？
