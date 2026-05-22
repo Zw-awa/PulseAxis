@@ -21,30 +21,3 @@ jobs:
           test -f README.md
           test -f .github/workflows/ci.yml
           test -f .github/workflows/pages.yml
-
-  node-tooling:
-    if: ${{ hashFiles('package.json') != '' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Lint
-        run: npm run lint --if-present
-
-      - name: Build
-        run: npm run build --if-present
-
-      - name: Test
-        run: npm test --if-present

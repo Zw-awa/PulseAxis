@@ -16,6 +16,8 @@ An open-source brushless motor control project for a single reciprocating actuat
 - [PulseAxis](#pulseaxis)
   - [Table Of Contents](#table-of-contents)
   - [What This Repository Is](#what-this-repository-is)
+  - [What It Tries To Do](#what-it-tries-to-do)
+  - [What This First Version Focuses On](#what-this-first-version-focuses-on)
   - [Current Status](#current-status)
   - [Repository Structure](#repository-structure)
   - [Quick Start](#quick-start)
@@ -38,6 +40,33 @@ If you are here to quickly understand whether the project is ready to reproduce:
 - the documentation entry points are in place
 - the implementation is still in an early stage
 - you should expect the build path and hardware details to evolve
+
+## What It Tries To Do
+
+PulseAxis is centered on one practical target:
+
+- a single reciprocating actuator axis
+- driven by a `BLDC` motor
+- with a control path that can grow toward `FOC`
+- and motion behavior that can later benefit from trajectory planning
+
+The project is meant to become useful in three ways:
+
+- as a small real-world learning project for `BLDC`, `FOC`, and motion control
+- as a reproducible bench platform for people who want to build a similar actuator experiment
+- as a future base for more advanced control and mechanism exploration
+
+## What This First Version Focuses On
+
+The first public version is intentionally narrow.
+It is mainly focused on:
+
+- one real physical reciprocating mechanism
+- one motor-driven axis
+- one desk-scale experimental platform
+- one public repository that documents the path from structure to implementation
+
+That also means the first version is not trying to cover every possible actuator shape or full product scenario at once.
 
 ## Current Status
 
