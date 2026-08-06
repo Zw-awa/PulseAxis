@@ -21,3 +21,6 @@ jobs:
           test -f README.md
           test -f .github/workflows/ci.yml
           test -f .github/workflows/pages.yml
+
+      - name: Check site links
+        run: node scripts/check-site-links.mjs
